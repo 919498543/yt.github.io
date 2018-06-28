@@ -8,28 +8,26 @@ This is my first blog Pages!
 
 
 
-# Header 1
+## Header 1
 Heello World！
-## Header 2
+
 ### Header 3
+学习内容相关：C#,asp.net,SQLserver
+游戏相关：LOL，DNF
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+**Bold** 
+
+[Image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530194544767&di=98025f4d32ce0eb23b984d645b285069&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201412%2F24%2F20141224161902_4KsN3.jpeg)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### After
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/919498543/yt.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+相关内容将会后续更新，感谢大家的支持。
 
 ### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+联系方式 
