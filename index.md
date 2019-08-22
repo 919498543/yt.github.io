@@ -2,7 +2,7 @@
 
 This is my first blog Pages!
 
-在这里，我将与大家分享一些有关学习或者游戏方面的某些小知识或者技巧
+在这里
 
 
 
@@ -10,8 +10,8 @@ This is my first blog Pages!
        Heello World！
 
 ### Markdown
-学习内容相关：C#,asp.net,SQLserver
-游戏相关：LOL，DNF
+内容相关：java js jquery javaweb
+
 
 
 
