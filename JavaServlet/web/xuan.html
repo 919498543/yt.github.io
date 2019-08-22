@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript">
+
+        var imgs=["img/xiao0.jpeg","img/xiao1.jpeg","img/xiao2.jpeg",
+            "img/xiao3.jpeg","img/xiao4.jpeg","img/xiao5.jpeg","img/xiao6.jpeg","img/xiao7.jpeg"
+        ,"img/xiao8.jpeg"];
+        var index;
+        var startID;
+        $(function () {
+            $("#startID").prop("disabled",false);
+            $("#stopID").prop("disabled",true);
+            $("#startID").click(function () {
+
+                startID = setInterval(function () {
+                    $("#startID").prop("disabled",true);
+                    $("#stopID").prop("disabled",false);
+                    index=Math.floor(Math.random()*7);
+                    $("#imgID").prop("src",imgs[index]);
+                },25);
+            });
+            $("#stopID").click(function () {
+                $("#startID").prop("disabled",false);
+                $("#stopID").prop("disabled",true);
+                clearInterval(startID);
+                $("#imgID2").prop("src",imgs[index]).hide();
+                $("#imgID2").show(1000).slideUp;
+            });
+        });
+
+
+
+
+    </script>
+</head>
+<body>
+<div style="border-style: dotted;width: 160px;height: 100px">
+    <img id="imgID" src="img/xiao4.jpeg" style="width: 160px;height: 100px">
+
+</div>
+<div style="border-style: double;width: 480px;height: 700px;position: absolute;left: 500px;top: 10px">
+    <img id="imgID2" src="img/xiao4.jpeg" style="width: 480px;height: 700px">
+</div>
+<input id="startID" type="button" value="点击开始" style="width: 100px;height: 60px;font-size: 18px">
+<input id="stopID" type="button" value="点击停止" style="width: 100px;height: 60px;font-size: 18px">
+</body>
+</html>

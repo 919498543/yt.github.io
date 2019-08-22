@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        function fun() {
+            // JQeury   ajax实现
+            /*$.ajax({url:"servletAjax",
+            type:"POST",data:{"username":"jack","age":23},
+                success:function (data) {
+                    alert(data)
+                }
+            });*/
+            // get方式实现，post相同
+            /*$.get("servletAjax",{username:"tom"},function (data) {
+                alert(data)
+            },"text")*/
+
+
+
+
+            //普通js实现
+            var xmlhttp;
+            if (window.XMLHttpRequest)  //创建对象
+            {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {// code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            //建立连接
+            xmlhttp.open("GET","servletAjax?username=tom",true);
+            //第一个参数（get/post)
+            // 第二个参数（url请求路径)第三个参数(true异步/false同步)
+            //发送请求
+            xmlhttp.send();   //get请求不需要传递参数，直接在路径后面拼接
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    var responseText = xmlhttp.responseText;
+                    alert(responseText);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="发送异步请求" onclick="fun();">
+    <input>
+</body>
+</html>
